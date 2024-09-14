@@ -1,7 +1,17 @@
 import { AiFillFileText } from "react-icons/ai";
-import { FaChartBar, FaChartLine, FaChartPie, FaGamepad, FaStopwatch } from "react-icons/fa";
+import {
+  FaChartBar,
+  FaChartLine,
+  FaChartPie,
+  FaGamepad,
+  FaStopwatch,
+} from "react-icons/fa";
 import { IoIosPeople } from "react-icons/io";
-import { RiCoupon3Fill, RiDashboardFill, RiShoppingBag3Fill } from "react-icons/ri";
+import {
+  RiCoupon3Fill,
+  RiDashboardFill,
+  RiShoppingBag3Fill,
+} from "react-icons/ri";
 import { Link, useLocation } from "react-router-dom";
 
 const SidebarItem = [
@@ -42,7 +52,7 @@ const chartItems = [
     text: "Line",
     icon: FaChartLine,
     path: "/admin/chart/line",
-  }
+  },
 ];
 
 const appItems = [
@@ -60,8 +70,8 @@ const appItems = [
     text: "Toss",
     icon: FaGamepad,
     path: "/admin/app/toss",
-  }
-]
+  },
+];
 
 const Sidebar = () => {
   const location = useLocation();
@@ -78,7 +88,9 @@ const Sidebar = () => {
                   backgroundColor: location.pathname.includes(item.path)
                     ? "rgba(0, 115, 255, 0.1)"
                     : "",
-                    color: location.pathname.includes(item.path) ? "rgb(0, 115, 255)" : "black",
+                  color: location.pathname.includes(item.path)
+                    ? "rgb(0, 115, 255)"
+                    : "black",
                 }}
               >
                 <item.icon />
@@ -98,7 +110,9 @@ const Sidebar = () => {
                   backgroundColor: location.pathname.includes(item.path)
                     ? "rgba(0, 115, 255, 0.1)"
                     : "",
-                    color: location.pathname.includes(item.path) ? "rgb(0, 115, 255)" : "black",
+                  color: location.pathname.includes(item.path)
+                    ? "rgb(0, 115, 255)"
+                    : "black",
                 }}
               >
                 <item.icon />
@@ -118,7 +132,9 @@ const Sidebar = () => {
                   backgroundColor: location.pathname.includes(item.path)
                     ? "rgba(0, 115, 255, 0.1)"
                     : "",
-                    color: location.pathname.includes(item.path) ? "rgb(0, 115, 255)" : "black",
+                  color: location.pathname.includes(item.path)
+                    ? "rgb(0, 115, 255)"
+                    : "black",
                 }}
               >
                 <item.icon />
